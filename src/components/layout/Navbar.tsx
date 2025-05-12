@@ -121,6 +121,52 @@ const Navbar: React.FC = () => {
         >
           <Icon name="FaUserPlus" style={{ marginRight: '0.5rem' }} /> Add Intern
         </NavLink>
+        <NavLink 
+  to="/hr-page" 
+  $isActive={location.pathname === '/login-page'}
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+>
+  <button
+    style={{
+      padding: '0.75rem 1.5rem',
+      fontSize: '1rem',
+      backgroundColor: '#4F46E5', // Indigo shade (adjust if needed)
+      color: '#fff',
+      border: 'none',
+      borderRadius: '0.5rem',
+      cursor: 'pointer',
+      fontWeight: '600',
+      transition: 'background-color 0.3s ease',
+    }}
+  >
+    Hr? Login
+  </button>
+</NavLink>
+
+<NavLink 
+  to="/intern-page" 
+  $isActive={location.pathname === '/intern-page'}
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+>
+  <button
+    style={{
+      padding: '0.75rem 1.5rem',
+      fontSize: '1rem',
+      backgroundColor: '#4F46E5', // Indigo shade (adjust if needed)
+      color: '#fff',
+      border: 'none',
+      borderRadius: '0.5rem',
+      cursor: 'pointer',
+      fontWeight: '600',
+      transition: 'background-color 0.3s ease',
+    }}
+  >
+    Intern? Login
+  </button>
+</NavLink>
+
         
         <ThemeToggle 
           onClick={toggleTheme}

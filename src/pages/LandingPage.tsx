@@ -139,7 +139,6 @@ const FeatureDescription = styled.p`
 `;
 
 const LandingPage: React.FC = () => {
-  // Animation for features section
   const controls = useAnimation();
   const [ref, inView] = useInView({
     threshold: 0.1,
